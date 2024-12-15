@@ -80,9 +80,5 @@ For this project, you need to obtain the **Google Gemini API credentials** and *
 - Replace any placeholder API keys or service account paths in your project with the appropriate values.
 
 **Important Note**: Ensure that `client_secret.json` and `service_account.json` are listed in your `.gitignore` file to prevent them from being pushed to your GitHub repository.
+<img width="1294" alt="Screenshot 2024-12-14 at 11 58 49 PM" src="https://github.com/user-attachments/assets/9e4bf00b-314d-47a0-8cd4-7202be47dab0" />
 
-## How to Run the Application Locally
-1. Clone the Repository:
-   ```bash
-   git clone https://github.com/your-username/your-repository.git
-   cd your-repository
