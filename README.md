@@ -53,3 +53,36 @@ The X-ray Analysis and Interpretation Tool is a Flask-based web application that
 - User Authentication: Implement user authentication for saving reports and personal data securely.
 - Improved UI/UX: Enhance the front-end design with more sophisticated visualizations and interactive features.
 
+## How to Obtain the API and Service Account Credentials
+
+For this project, you need to obtain the **Google Gemini API credentials** and **Google Cloud service account keys** to interact with Google's machine learning services. 
+
+### 1. **Google Gemini API Key**:
+   - Go to the [Google Cloud Console](https://console.cloud.google.com/).
+   - Create or select a project.
+   - Enable the **Google Gemini API** for the selected project.
+   - Go to the **Credentials** section of your Google Cloud Console.
+   - Click **Create credentials** and select **API key**. Copy the API key.
+   - Replace the `API_KEY` in the code with this key.
+
+### 2. **Google Cloud Service Account**:
+   - Go to the [Google Cloud Console](https://console.cloud.google.com/).
+   - Create or select a project.
+   - Go to **IAM & Admin > Service Accounts**.
+   - Create a new service account and grant it the necessary permissions (e.g., access to Google Cloud APIs for image processing).
+   - Once the service account is created, click on it and go to the **Keys** tab.
+   - Create a new JSON key and download it to your local machine.
+   - **Important**: This key contains sensitive information and should never be pushed to a public repository.
+   - Save this file as `service_account.json` and **never expose it publicly**. Ensure it is listed in your `.gitignore`.
+
+### How to Use the Credentials:
+- Place the downloaded `service_account.json` file in the project directory where your Flask app resides.
+- Replace any placeholder API keys or service account paths in your project with the appropriate values.
+
+**Important Note**: Ensure that `client_secret.json` and `service_account.json` are listed in your `.gitignore` file to prevent them from being pushed to your GitHub repository.
+
+## How to Run the Application Locally
+1. Clone the Repository:
+   ```bash
+   git clone https://github.com/your-username/your-repository.git
+   cd your-repository
