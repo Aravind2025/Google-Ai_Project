@@ -11,7 +11,7 @@ app = Flask(__name__)
 
 # Path to the OAuth2 client secret file (for Google AI Studio) for headless authentication
 SERVICE_ACCOUNT_FILE = "/app/service_account.json"  # Replace with your service account file path
-# API_KEY = "AIzaSyDiin8Rbxrclub0ERZNW4CgxzKCJIJKxxE"  # Replace with your actual API key
+# API_KEY = ""  # Replace with your actual API key
 
 # Function to authenticate and get an access token for Google AI Studio (OAuth2)
 def get_access_token():
